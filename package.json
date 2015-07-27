@@ -1,0 +1,40 @@
+{
+  "name": "normalize-file-to-url-path",
+  "version": "1.0.0",
+  "description": "normalizes a file to a URL pathname",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.0.1"
+  },
+  "scripts": {
+    "test": "node test.js | faucet"
+  },
+  "keywords": [
+    "url",
+    "path",
+    "name",
+    "file",
+    "pathname",
+    "files",
+    "absolute",
+    "relative",
+    "urls"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/normalize-file-to-url-path.git"
+  },
+  "homepage": "https://github.com/normalize-file-to-url-path",
+  "bugs": {
+    "url": "https://github.com/normalize-file-to-url-path/issues"
+  }
+}

@@ -1,0 +1,22 @@
+var url = require('./')
+var test = require('tape')
+
+test('turn a file path into a URL pathname', function (t) {
+  t.equal(url('/'), null)
+  t.equal(url('/'), null)
+  t.equal(url('.\\\\'), null)
+  t.equal(url('.'), null)
+  t.equal(url('./'), null)
+  t.equal(url('.///'), null)
+  t.equal(url('./foo/bar.js?query=true'), 'foo/bar.js?query=true', 'keeps query')
+  t.equal(url('/home/foo.js'), null)
+  t.equal(url('/home/foo.js#home'), null)
+  t.equal(url('../home/foo.js'), null)
+  t.equal(url('foo.js'), 'foo.js')
+  t.equal(url('./foo.js'), 'foo.js')
+  t.equal(url('.//foo.js'), 'foo.js')
+  t.equal(url('.//foo.js?blah=2#home'), 'foo.js?blah=2')
+  t.equal(url('.\\foo.js'), 'foo.js')
+  t.end()
+})
+  
